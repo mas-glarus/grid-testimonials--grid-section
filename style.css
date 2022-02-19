@@ -1,0 +1,28 @@
+section {
+    height: 75%;
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.daniel-clifford {
+background-color: hsl(263, 55%, 52%);
+}
+
+.jonathan-walters {
+background-color: hsl(217, 19%, 35%);
+}
+
+.kira-whittle{
+background-color: hsl(0, 0%, 100%);
+}
+
+.jeanette-harmon {
+background-color: hsl(0, 0%, 100%);
+}
+
+.patrick-abrams {
+background-color: hsl(219, 29%, 14%);
+}
