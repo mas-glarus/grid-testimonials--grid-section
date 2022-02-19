@@ -1,28 +1,60 @@
+body {
+	font-family: Barlow Semi Condensed;
+	background-color: rgb(202, 202, 202);
+}
+
+.fundamental {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 section {
-    height: 75%;
-    width: 75%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
+	height: 600px;
+	width: 1200px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas:
+		"daniel daniel jonathan kira"
+		"jeanette patrick patrick kira";
+	grid-gap: 30px;
+}
+
+.daniel-clifford,
+.jonathan-walters,
+.kira-whittle,
+.jeanette-harmon,
+.patrick-abrams {
+	border-radius: 15px;
 }
 
 .daniel-clifford {
-background-color: hsl(263, 55%, 52%);
+	background-color: hsl(263, 55%, 52%);
+	grid-area: daniel;
+	color: white;
 }
 
 .jonathan-walters {
-background-color: hsl(217, 19%, 35%);
+	background-color: hsl(217, 19%, 35%);
+	grid-area: jonathan;
+	color: white;
 }
 
-.kira-whittle{
-background-color: hsl(0, 0%, 100%);
+.kira-whittle {
+	background-color: hsl(0, 0%, 100%);
+	grid-area: kira;
 }
 
 .jeanette-harmon {
-background-color: hsl(0, 0%, 100%);
+	background-color: hsl(0, 0%, 100%);
+	grid-area: jeanette;
 }
 
 .patrick-abrams {
-background-color: hsl(219, 29%, 14%);
+	background-color: hsl(219, 29%, 14%);
+	grid-area: patrick;
+	color: white;
 }
