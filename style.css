@@ -130,6 +130,11 @@ p {
 	color: white;
 }
 
+.kira-whittle-mid,
+.jeanette-harmon-mid {
+	color: hsl(219, 29%, 14%);
+}
+
 .kira-whittle {
 	background-color: hsl(0, 0%, 100%);
 	grid-area: kira;
