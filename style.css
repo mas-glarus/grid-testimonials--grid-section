@@ -25,6 +25,32 @@ section {
 	grid-gap: 30px;
 }
 
+@media screen and (max-width: 375px) {
+	section {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 2fr 1fr 1fr 2fr 1fr;
+		grid-template-areas:
+			"daniel"
+			"daniel"
+			"jonathan"
+			"jeanette"
+			"patrick"
+			"patrick"
+			"kira";
+		grid-gap: 30px;
+	}
+	/*was heavy to find out. but right?: */
+	.daniel-clifford,
+	.jonathan-walters,
+	.kira-whittle,
+	.jeanette-harmon,
+	.patrick-abrams {
+		height: max-content;
+	}
+	/*---------------------------------*/
+}
+
 h2 {
 	font-size: 14px;
 	font-weight: 500;
@@ -77,6 +103,7 @@ p {
 	width: 40px;
 	/*personal input:*/
 	border: 5px solid hsl(263, 82%, 62%);
+	/*---------------------------------*/
 }
 
 .daniel-clifford-top,
